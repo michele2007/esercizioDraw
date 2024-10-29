@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      main {
+        min-height: 100vh;
+        justify-content: center;
+        display: flex;
+      }
+    </style>
+
+</head>
+<body>
+    <script src="p5.min.js"></script>
+    <script>
+        function setup() {
+            createCanvas(500, 500)
+            background("red")
+            angleMode(DEGREES)
+        }
+
+        function draw() {
+            //faccia
+            fill("yellow")
+            circle(250,250,400)
+
+            //occhi
+            fill("white")
+            circle(180,180,70)
+            fill("white")
+            circle(320,180,70)
+            //pupille
+            fill("black")
+            circle(180,195,40)
+            fill("black")
+            circle(325,168,40)
+            noFill()
+            arc(250,300,200,150,0,180)
+        }
+
+
+    </script>
+</body>
+</html>
